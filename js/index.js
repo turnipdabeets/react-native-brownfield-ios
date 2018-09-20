@@ -27,6 +27,7 @@ class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <Text style={styles.welcome}>{`Hello ${this.props.initialProps.name || "Friend"}`}</Text>
         <Text style={styles.welcome}>We're live from React Native!!!</Text>
       </View>
     )
@@ -34,5 +35,5 @@ class App extends React.Component {
 }
 
 // 4
-AppRegistry.registerComponent('App', () => App);
+AppRegistry.registerComponent('ReactNativeApp', () => App);
 
