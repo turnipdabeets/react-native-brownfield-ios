@@ -1,0 +1,13 @@
+{
+  "name": "brownfield",
+  "version": "1.0.0",
+  "private": true,
+  "description": "react native part of this brownfield app",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "dependencies": {
+    "react": "~16.5.0",
+    "react-native": "~0.57.0"
+  }
+}
