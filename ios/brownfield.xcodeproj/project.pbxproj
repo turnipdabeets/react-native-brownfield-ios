@@ -12,6 +12,7 @@
 		8906F1DD2152C87C0060C082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8906F1DB2152C87C0060C082 /* Main.storyboard */; };
 		8906F1DF2152C87F0060C082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8906F1DE2152C87F0060C082 /* Assets.xcassets */; };
 		8906F1E22152C87F0060C082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8906F1E02152C87F0060C082 /* LaunchScreen.storyboard */; };
+		893BC06621559DFA00BCB31D /* ReactModuleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893BC06521559DFA00BCB31D /* ReactModuleProvider.swift */; };
 		E50103AE2411E08EC1F7A9C0 /* Pods_brownfield.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D948A496BE830E7B9C88A2 /* Pods_brownfield.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		8906F1DE2152C87F0060C082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8906F1E12152C87F0060C082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8906F1E32152C87F0060C082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		893BC06521559DFA00BCB31D /* ReactModuleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactModuleProvider.swift; sourceTree = "<group>"; };
 		F7D948A496BE830E7B9C88A2 /* Pods_brownfield.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brownfield.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 		8906F1D62152C87C0060C082 /* brownfield */ = {
 			isa = PBXGroup;
 			children = (
+				893BC06521559DFA00BCB31D /* ReactModuleProvider.swift */,
 				8906F1E92152C92E0060C082 /* Supporting */,
 				8906F1D92152C87C0060C082 /* ViewController.swift */,
 				8906F1DB2152C87C0060C082 /* Main.storyboard */,
@@ -170,8 +173,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-brownfield/Pods-brownfield-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
@@ -181,8 +182,6 @@
 				"${BUILT_PRODUCTS_DIR}/yoga/yoga.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
@@ -200,15 +199,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-brownfield-checkManifestLockResult.txt",
 			);
@@ -224,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				893BC06621559DFA00BCB31D /* ReactModuleProvider.swift in Sources */,
 				8906F1DA2152C87C0060C082 /* ViewController.swift in Sources */,
 				8906F1D82152C87C0060C082 /* AppDelegate.swift in Sources */,
 			);

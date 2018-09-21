@@ -35,5 +35,5 @@ class App extends React.Component {
 }
 
 // 4
-AppRegistry.registerComponent('ReactNativeApp', () => App);
+AppRegistry.registerComponent('HelloReact', () => App);
 
