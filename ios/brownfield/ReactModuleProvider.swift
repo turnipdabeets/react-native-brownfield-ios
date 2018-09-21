@@ -31,7 +31,11 @@ class ReactModuleProvider: NSObject {
 
 extension ReactModuleProvider: RCTBridgeDelegate {
     func sourceURL(for bridge: RCTBridge!) -> URL! {
-        //        return Bundle.main.url(forResource: "main", withExtension: "jsbundle")
+        // Product -> Scheme -> Edit Scheme -> Run -> Build Configuration -> Release || Debug
+        #if DEBUG
         return URL(string: "http://localhost:8081/index.bundle?platform=ios")
+        #else
+        return Bundle.main.url(forResource: "main", withExtension: "jsbundle")
+        #endif
     }
 }

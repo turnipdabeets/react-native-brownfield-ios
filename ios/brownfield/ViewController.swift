@@ -14,14 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var enterName: UITextField!
 
     @IBAction func toReact(_ sender: UIButton) {
-        let data = ["initialProps":
-            [
-                "name": getTextInput()
-            ]
-        ]
         let addHelloView = ReactModuleProvider.sharedInstance.viewForModule(
             "HelloReact",
-            initialProperties: data)
+            initialProperties: ["name": getTextInput()])
         let vc = UIViewController()
         vc.view = addHelloView
         self.present(vc, animated: true, completion: nil)
