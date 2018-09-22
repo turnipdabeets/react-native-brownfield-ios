@@ -21,8 +21,15 @@ class ReactManager: RCTEventEmitter {
     @objc func dismissPresentedViewController(_ reactTag: NSNumber) {
         DispatchQueue.main.async {
             if let view = self.bridge.uiManager.view(forReactTag: reactTag) {
+                // Add Transition Animation, RN is displayed as a modal and will otherwise slide up
+                let transition = CATransition()
+                transition.duration = 0.5
+                transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+                transition.type = kCATransitionPush
+                transition.subtype = kCATransitionFromLeft
                 let presentedViewController: UIViewController! = view.reactViewController()
-                presentedViewController.dismiss(animated: true, completion: nil)
+                presentedViewController.view.window?.layer.add(transition, forKey: nil)
+                presentedViewController.dismiss(animated: false, completion: nil)
             }
         }
     }
