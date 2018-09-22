@@ -1,5 +1,3 @@
-"use strict";
-// 1
 import React from "react";
 import ReactNative, {
   AppRegistry,
@@ -9,8 +7,17 @@ import ReactNative, {
   Button,
   NativeModules
 } from "react-native";
+import MessageQueue from "react-native/Libraries/BatchedBridge/MessageQueue.js";
 
-// 2
+/* 
+ Uncomment for bridge debugging: https://blog.callstack.io/reactnative-how-to-check-what-passes-through-your-bridge-e435571ffd85 
+
+ */
+// const spyFunction = (msg) => {
+//   console.log(msg);
+// };
+// MessageQueue.spy(spyFunction);
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -24,7 +31,6 @@ const styles = StyleSheet.create({
   }
 });
 
-// 3
 class App extends React.Component {
   render() {
     return (
@@ -45,5 +51,4 @@ class App extends React.Component {
   }
 }
 
-// 4
 AppRegistry.registerComponent("HelloReact", () => App);
