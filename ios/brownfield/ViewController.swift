@@ -11,7 +11,7 @@ import React
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var enterName: UITextField!
+    @IBOutlet weak var inputText: UITextField!
 
     @IBAction func toReact(_ sender: UIButton) {
         let addHelloView = ReactModuleProvider.sharedInstance.viewForModule(
@@ -23,8 +23,25 @@ class ViewController: UIViewController {
     }
 
     func getTextInput() -> String {
-        return enterName.text ?? ""
+        return inputText.text ?? ""
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "React Native Brownfield"
+        self.inputText.delegate = self
+    }
+    
+}
+
+extension ViewController: UITextFieldDelegate {
+    // Add action on return key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == inputText {
+            textField.resignFirstResponder()
+            return false
+        }
+        return true
+    }
 }
 
