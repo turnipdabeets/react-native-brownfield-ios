@@ -9,6 +9,11 @@ import ReactNative, {
 } from "react-native";
 import MessageQueue from "react-native/Libraries/BatchedBridge/MessageQueue.js";
 
+import { useScreens } from 'react-native-screens';
+console.log("useScreens", useScreens)
+
+useScreens()
+
 /* 
  Uncomment for bridge debugging: https://blog.callstack.io/reactnative-how-to-check-what-passes-through-your-bridge-e435571ffd85 
 
