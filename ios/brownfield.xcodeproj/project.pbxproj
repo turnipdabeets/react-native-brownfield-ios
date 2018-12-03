@@ -17,6 +17,20 @@
 		893BC06B2155B29000BCB31D /* ReactManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 893BC06A2155B29000BCB31D /* ReactManagerBridge.m */; };
 		89683A5421B5BD8600FB849D /* RNSScreenContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 89683A5221B5BD8500FB849D /* RNSScreenContainer.m */; };
 		89683A5521B5BD8600FB849D /* RNSScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 89683A5321B5BD8600FB849D /* RNSScreen.m */; };
+		89683A6921B5BE4000FB849D /* RNGestureHandlerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 89683A5721B5BE3800FB849D /* RNGestureHandlerButton.m */; };
+		89683A6A21B5BE4000FB849D /* RNGestureHandlerEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 89683A5A21B5BE3A00FB849D /* RNGestureHandlerEvents.m */; };
+		89683A6B21B5BE4000FB849D /* RNGestureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 89683A5B21B5BE3A00FB849D /* RNGestureHandler.m */; };
+		89683A6C21B5BE4000FB849D /* RNGestureHandlerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 89683A5D21B5BE3B00FB849D /* RNGestureHandlerModule.m */; };
+		89683A6E21B5BE4000FB849D /* RNGestureHandlerRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 89683A6121B5BE3D00FB849D /* RNGestureHandlerRegistry.m */; };
+		89683A6F21B5BE4000FB849D /* RNRootViewGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 89683A6221B5BE3D00FB849D /* RNRootViewGestureRecognizer.m */; };
+		89683A7121B5BE4000FB849D /* RNGestureHandlerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 89683A6821B5BE4000FB849D /* RNGestureHandlerManager.m */; };
+		89683A9621B5C0C900FB849D /* RNPinchHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 89683A8921B5C0C200FB849D /* RNPinchHandler.m */; };
+		89683A9721B5C0C900FB849D /* RNFlingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 89683A8A21B5C0C200FB849D /* RNFlingHandler.m */; };
+		89683A9821B5C0C900FB849D /* RNPanHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 89683A8D21B5C0C400FB849D /* RNPanHandler.m */; };
+		89683A9921B5C0C900FB849D /* RNNativeViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 89683A8E21B5C0C500FB849D /* RNNativeViewHandler.m */; };
+		89683A9A21B5C0C900FB849D /* RNLongPressHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 89683A8F21B5C0C500FB849D /* RNLongPressHandler.m */; };
+		89683A9B21B5C0C900FB849D /* RNTapHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 89683A9321B5C0C800FB849D /* RNTapHandler.m */; };
+		89683A9C21B5C0C900FB849D /* RNRotationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 89683A9521B5C0C900FB849D /* RNRotationHandler.m */; };
 		E50103AE2411E08EC1F7A9C0 /* Pods_brownfield.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D948A496BE830E7B9C88A2 /* Pods_brownfield.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +51,36 @@
 		89683A5121B5BD8500FB849D /* RNSScreenContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSScreenContainer.h; sourceTree = "<group>"; };
 		89683A5221B5BD8500FB849D /* RNSScreenContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSScreenContainer.m; sourceTree = "<group>"; };
 		89683A5321B5BD8600FB849D /* RNSScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSScreen.m; sourceTree = "<group>"; };
+		89683A5721B5BE3800FB849D /* RNGestureHandlerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNGestureHandlerButton.m; sourceTree = "<group>"; };
+		89683A5821B5BE3900FB849D /* RNGestureHandlerDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGestureHandlerDirection.h; sourceTree = "<group>"; };
+		89683A5921B5BE3900FB849D /* RNGestureHandlerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGestureHandlerButton.h; sourceTree = "<group>"; };
+		89683A5A21B5BE3A00FB849D /* RNGestureHandlerEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNGestureHandlerEvents.m; sourceTree = "<group>"; };
+		89683A5B21B5BE3A00FB849D /* RNGestureHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNGestureHandler.m; sourceTree = "<group>"; };
+		89683A5C21B5BE3B00FB849D /* RNGestureHandlerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGestureHandlerState.h; sourceTree = "<group>"; };
+		89683A5D21B5BE3B00FB849D /* RNGestureHandlerModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNGestureHandlerModule.m; sourceTree = "<group>"; };
+		89683A5E21B5BE3C00FB849D /* RNRootViewGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNRootViewGestureRecognizer.h; sourceTree = "<group>"; };
+		89683A6021B5BE3D00FB849D /* RNGestureHandlerModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGestureHandlerModule.h; sourceTree = "<group>"; };
+		89683A6121B5BE3D00FB849D /* RNGestureHandlerRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNGestureHandlerRegistry.m; sourceTree = "<group>"; };
+		89683A6221B5BE3D00FB849D /* RNRootViewGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNRootViewGestureRecognizer.m; sourceTree = "<group>"; };
+		89683A6321B5BE3E00FB849D /* RNGestureHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGestureHandler.h; sourceTree = "<group>"; };
+		89683A6521B5BE3F00FB849D /* RNGestureHandlerRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGestureHandlerRegistry.h; sourceTree = "<group>"; };
+		89683A6621B5BE3F00FB849D /* RNGestureHandlerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGestureHandlerManager.h; sourceTree = "<group>"; };
+		89683A6721B5BE4000FB849D /* RNGestureHandlerEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGestureHandlerEvents.h; sourceTree = "<group>"; };
+		89683A6821B5BE4000FB849D /* RNGestureHandlerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNGestureHandlerManager.m; sourceTree = "<group>"; };
+		89683A8821B5C0C100FB849D /* RNFlingHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNFlingHandler.h; sourceTree = "<group>"; };
+		89683A8921B5C0C200FB849D /* RNPinchHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNPinchHandler.m; sourceTree = "<group>"; };
+		89683A8A21B5C0C200FB849D /* RNFlingHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNFlingHandler.m; sourceTree = "<group>"; };
+		89683A8B21B5C0C300FB849D /* RNTapHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTapHandler.h; sourceTree = "<group>"; };
+		89683A8C21B5C0C300FB849D /* RNNativeViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNNativeViewHandler.h; sourceTree = "<group>"; };
+		89683A8D21B5C0C400FB849D /* RNPanHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNPanHandler.m; sourceTree = "<group>"; };
+		89683A8E21B5C0C500FB849D /* RNNativeViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNNativeViewHandler.m; sourceTree = "<group>"; };
+		89683A8F21B5C0C500FB849D /* RNLongPressHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNLongPressHandler.m; sourceTree = "<group>"; };
+		89683A9021B5C0C600FB849D /* RNPinchHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNPinchHandler.h; sourceTree = "<group>"; };
+		89683A9121B5C0C700FB849D /* RNPanHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNPanHandler.h; sourceTree = "<group>"; };
+		89683A9221B5C0C700FB849D /* RNLongPressHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNLongPressHandler.h; sourceTree = "<group>"; };
+		89683A9321B5C0C800FB849D /* RNTapHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTapHandler.m; sourceTree = "<group>"; };
+		89683A9421B5C0C900FB849D /* RNRotationHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNRotationHandler.h; sourceTree = "<group>"; };
+		89683A9521B5C0C900FB849D /* RNRotationHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNRotationHandler.m; sourceTree = "<group>"; };
 		F7D948A496BE830E7B9C88A2 /* Pods_brownfield.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brownfield.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,6 +126,7 @@
 		8906F1D62152C87C0060C082 /* brownfield */ = {
 			isa = PBXGroup;
 			children = (
+				89683A5621B5BE1600FB849D /* RNGestureHandler */,
 				89683A4F21B5BD6700FB849D /* RNScreens */,
 				893BC0682155B0AC00BCB31D /* ReactManager.swift */,
 				893BC06521559DFA00BCB31D /* ReactModuleProvider.swift */,
@@ -113,6 +158,43 @@
 				89683A5221B5BD8500FB849D /* RNSScreenContainer.m */,
 			);
 			path = RNScreens;
+			sourceTree = "<group>";
+		};
+		89683A5621B5BE1600FB849D /* RNGestureHandler */ = {
+			isa = PBXGroup;
+			children = (
+				89683A8821B5C0C100FB849D /* RNFlingHandler.h */,
+				89683A8A21B5C0C200FB849D /* RNFlingHandler.m */,
+				89683A9221B5C0C700FB849D /* RNLongPressHandler.h */,
+				89683A8F21B5C0C500FB849D /* RNLongPressHandler.m */,
+				89683A8C21B5C0C300FB849D /* RNNativeViewHandler.h */,
+				89683A8E21B5C0C500FB849D /* RNNativeViewHandler.m */,
+				89683A9121B5C0C700FB849D /* RNPanHandler.h */,
+				89683A8D21B5C0C400FB849D /* RNPanHandler.m */,
+				89683A9021B5C0C600FB849D /* RNPinchHandler.h */,
+				89683A8921B5C0C200FB849D /* RNPinchHandler.m */,
+				89683A9421B5C0C900FB849D /* RNRotationHandler.h */,
+				89683A9521B5C0C900FB849D /* RNRotationHandler.m */,
+				89683A8B21B5C0C300FB849D /* RNTapHandler.h */,
+				89683A9321B5C0C800FB849D /* RNTapHandler.m */,
+				89683A6321B5BE3E00FB849D /* RNGestureHandler.h */,
+				89683A5B21B5BE3A00FB849D /* RNGestureHandler.m */,
+				89683A5921B5BE3900FB849D /* RNGestureHandlerButton.h */,
+				89683A5721B5BE3800FB849D /* RNGestureHandlerButton.m */,
+				89683A5821B5BE3900FB849D /* RNGestureHandlerDirection.h */,
+				89683A6721B5BE4000FB849D /* RNGestureHandlerEvents.h */,
+				89683A5A21B5BE3A00FB849D /* RNGestureHandlerEvents.m */,
+				89683A6621B5BE3F00FB849D /* RNGestureHandlerManager.h */,
+				89683A6821B5BE4000FB849D /* RNGestureHandlerManager.m */,
+				89683A6021B5BE3D00FB849D /* RNGestureHandlerModule.h */,
+				89683A5D21B5BE3B00FB849D /* RNGestureHandlerModule.m */,
+				89683A6521B5BE3F00FB849D /* RNGestureHandlerRegistry.h */,
+				89683A6121B5BE3D00FB849D /* RNGestureHandlerRegistry.m */,
+				89683A5C21B5BE3B00FB849D /* RNGestureHandlerState.h */,
+				89683A5E21B5BE3C00FB849D /* RNRootViewGestureRecognizer.h */,
+				89683A6221B5BE3D00FB849D /* RNRootViewGestureRecognizer.m */,
+			);
+			path = RNGestureHandler;
 			sourceTree = "<group>";
 		};
 		C6F4921CCF907B0369F6E188 /* Frameworks */ = {
@@ -258,13 +340,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89683A7121B5BE4000FB849D /* RNGestureHandlerManager.m in Sources */,
+				89683A6C21B5BE4000FB849D /* RNGestureHandlerModule.m in Sources */,
 				893BC06621559DFA00BCB31D /* ReactModuleProvider.swift in Sources */,
 				893BC06B2155B29000BCB31D /* ReactManagerBridge.m in Sources */,
+				89683A6E21B5BE4000FB849D /* RNGestureHandlerRegistry.m in Sources */,
+				89683A9C21B5C0C900FB849D /* RNRotationHandler.m in Sources */,
 				89683A5521B5BD8600FB849D /* RNSScreen.m in Sources */,
+				89683A9821B5C0C900FB849D /* RNPanHandler.m in Sources */,
+				89683A9621B5C0C900FB849D /* RNPinchHandler.m in Sources */,
+				89683A9B21B5C0C900FB849D /* RNTapHandler.m in Sources */,
 				8906F1DA2152C87C0060C082 /* ViewController.swift in Sources */,
+				89683A6921B5BE4000FB849D /* RNGestureHandlerButton.m in Sources */,
+				89683A9721B5C0C900FB849D /* RNFlingHandler.m in Sources */,
 				8906F1D82152C87C0060C082 /* AppDelegate.swift in Sources */,
+				89683A6B21B5BE4000FB849D /* RNGestureHandler.m in Sources */,
 				893BC0692155B0AC00BCB31D /* ReactManager.swift in Sources */,
+				89683A9A21B5C0C900FB849D /* RNLongPressHandler.m in Sources */,
 				89683A5421B5BD8600FB849D /* RNSScreenContainer.m in Sources */,
+				89683A6A21B5BE4000FB849D /* RNGestureHandlerEvents.m in Sources */,
+				89683A9921B5C0C900FB849D /* RNNativeViewHandler.m in Sources */,
+				89683A6F21B5BE4000FB849D /* RNRootViewGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

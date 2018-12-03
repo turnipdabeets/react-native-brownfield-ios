@@ -10,8 +10,9 @@ import ReactNative, {
 import MessageQueue from "react-native/Libraries/BatchedBridge/MessageQueue.js";
 
 import { useScreens } from 'react-native-screens';
+import { gestureHandlerRootHOC, RawButton } from 'react-native-gesture-handler'
 console.log("useScreens", useScreens)
-
+console.log("gestureHandlerRootHOC, RawButton", gestureHandlerRootHOC, RawButton)
 useScreens()
 
 /* 
