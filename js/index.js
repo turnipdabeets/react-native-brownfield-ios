@@ -10,9 +10,10 @@ import ReactNative, {
 import MessageQueue from "react-native/Libraries/BatchedBridge/MessageQueue.js";
 
 import { useScreens } from 'react-native-screens';
-import { gestureHandlerRootHOC, RawButton } from 'react-native-gesture-handler'
+import { createStackNavigator, createAppContainer } from "react-navigation";
+// import { gestureHandlerRootHOC, RawButton } from 'react-native-gesture-handler'
 console.log("useScreens", useScreens)
-console.log("gestureHandlerRootHOC, RawButton", gestureHandlerRootHOC, RawButton)
+// console.log("gestureHandlerRootHOC, RawButton", gestureHandlerRootHOC, RawButton)
 useScreens()
 
 /* 
@@ -37,7 +38,7 @@ const styles = StyleSheet.create({
   }
 });
 
-class App extends React.Component {
+class HomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -52,9 +53,64 @@ class App extends React.Component {
             );
           }}
         />
+        <Button
+          title="Go to Recursive screen"
+          onPress={() => this.props.navigation.navigate('Recursive')}
+        />
       </View>
     );
   }
 }
+
+class RecursiveScreen extends React.Component {
+
+  static navigationOptions = ({ navigation }) => {
+    return {
+      headerTitle: "New Screen",
+      headerRight: (
+        <Button
+          onPress={navigation.getParam('increaseCount')}
+          title="+1"
+          color="#fff"
+        />
+      ),
+    };
+  };
+
+  componentDidMount() {
+    this.props.navigation.setParams({ increaseCount: this._increaseCount });
+  }
+
+  state = {
+    count: 0,
+  };
+
+  _increaseCount = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
+
+  render() {
+    return (
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text>Screen {this.state.count}</Text>
+        <Button
+          title="Go to this screen... again"
+          onPress={() => this.props.navigation.navigate('Recursive')}
+        />
+      </View>
+    );
+  }
+}
+
+const AppNavigator = createStackNavigator({
+  Home: {
+    screen: HomeScreen
+  },
+  Recursive: {
+    screen: RecursiveScreen
+  }
+});
+
+const App = createAppContainer(AppNavigator);
 
 AppRegistry.registerComponent("HelloReact", () => App);

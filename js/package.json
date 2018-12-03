@@ -10,6 +10,7 @@
     "react": "16.5.1",
     "react-native": "0.57.0",
     "react-native-gesture-handler": "^1.0.10",
-    "react-native-screens": "^1.0.0-alpha.16"
+    "react-native-screens": "^1.0.0-alpha.16",
+    "react-navigation": "^3.0.4"
   }
 }
